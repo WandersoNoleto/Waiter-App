@@ -10,6 +10,7 @@ mongoose.connect('mongodb+srv://wnoleto:Quadrado2@cluster0.pr2z02y.mongodb.net/?
         const app  = express();
         const port = 3001;
 
+        app.use(express.json());
         app.use(router);
 
         app.listen(port, () => {
