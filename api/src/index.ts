@@ -1,11 +1,12 @@
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
 import mongoose from 'mongoose';
 
 import { router } from './router';
 
-
-
-mongoose.connect('mongodb+srv://wnoleto:Quadrado2@cluster0.pr2z02y.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://wnoleto:@Quadrado2@cluster0.ut2gdxl.mongodb.net/?retryWrites=true&w=majority')
     .then(() => {
         const app  = express();
         const port = 3001;

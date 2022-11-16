@@ -6,5 +6,5 @@ export async function listCategories(req: Request, res: Response) {
     const categories = await Category.find();
 
 
-    res.json();
+    res.json(categories);
 }
